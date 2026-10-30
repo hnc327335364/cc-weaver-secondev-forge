@@ -2,7 +2,7 @@
 name: weaver-cc-assistant
 description: CC Weaver Secondev Forge，为项目、开发和实施人员处理泛微 E9/E10 需求、方案估算、局部开发、排障及交付；按任务读取随包资料和专业模块，核实实际接口与业务结果。
 metadata:
-  version: "0.3.0-rc.2"
+  version: "0.3.0-rc.3"
   revision: "2026-10-30"
   status: "internal-trial"
 ---
