@@ -5,7 +5,7 @@
 <p>面向项目、开发与实施人员的泛微二次开发 Skill</p>
 <p><code>E9 / E10</code> · <code>One Skill</code> · <code>Shared Knowledge</code></p>
 
-**[下载版本](#获取与安装) · [版本变更](CHANGELOG.md) · [完整使用说明](使用说明.md)**
+**[下载与安装](#获取与安装) · [Releases](https://github.com/hnc327335364/cc-weaver-secondev-forge/releases) · [使用说明](使用说明.md)**
 
 </div>
 
@@ -13,8 +13,8 @@
 
 将需求分析、平台知识、局部开发、排障和交付能力整合到一个入口。安装一次，直接描述任务；助手按需要读取知识和调用专业模块。
 
-> **当前版本：v0.3.0-rc.3 · 内部验证候选版**  
-> 本版优化仓库首页与版本说明入口，移出发布维护及授权工具。开发能力与共享资料沿用 rc.2。真实宿主与客户环境的验收状态分别记录，不将候选版视为全面验收版。
+> **当前版本：v0.3.0 · 正式发布版**  
+> 一个安装入口，完整共享知识库，按需调用专业模块。版本变更与下载文件统一在 Releases 查看。
 
 ## 适用场景
 
@@ -26,12 +26,12 @@
 
 ## 获取与安装
 
-**先获得仓库访问权限，再下载指定版本。** 私有仓库的链接本身不授予权限；尚未授权时，请向维护者提供所用平台的用户名。无需同时注册两个平台。
+**从下方发行页下载指定版本的完整源码 ZIP。** 仓库公开可读，不需要维护者邀请或授予仓库成员权限；下载入口是否要求登录以平台实际提示为准。
 
 | 下载入口 | 适用情况 | 获取方式 |
 | :--- | :--- | :--- |
-| **[Gitee 发行页](https://gitee.com/hou_nachuan/cc-weaver-secondev-forge/releases)** | 国内伙伴优先 | 登录获授权账号，选择 **v0.3.0-rc.3**，下载对应版本源码 ZIP |
-| **[GitHub 发行页](https://github.com/hnc327335364/cc-weaver-secondev-forge/releases/tag/v0.3.0-rc.3)** | 已有 GitHub 访问权限 | 登录后在发行页的 **Assets → Source code (zip)** 下载 |
+| **[Gitee 发行页](https://gitee.com/hou_nachuan/cc-weaver-secondev-forge/releases)** | 国内伙伴优先 | 选择 **v0.3.0**，下载对应版本源码 ZIP |
+| **[GitHub 发行页](https://github.com/hnc327335364/cc-weaver-secondev-forge/releases/tag/v0.3.0)** | 使用 GitHub 的伙伴 | 在发行页的 **Assets → Source code (zip)** 下载 |
 
 使用完整版本 ZIP，不单独下载 `SKILL.md`。两端提供同版本内容，平台生成的 ZIP 文件名、封装和大小可能不同。
 
@@ -41,7 +41,7 @@
 2. 选择下载的版本 ZIP，按界面提示导入并启用。
 3. 新建对话，调用 **CC Weaver Secondev Forge**，完成下方首次验证。
 
-[查看图文安装步骤](使用说明.md)。仓库根目录即完整 Skill，下载后无需重新整理目录或自行压缩；当前版本的实际客户端导入仍须验证。
+[查看图文安装步骤](使用说明.md)。仓库根目录即完整 Skill，下载后无需重新整理目录或自行压缩；首次安装后请完成下方正文试读。
 
 ### Codex / DSH
 
@@ -80,17 +80,23 @@
 | `skills/`、`references/` | 专业模块、开发约定及场景指南 |
 | `library/`、`knowledge/` | 共享正文、索引及知识卡片 |
 | `scripts/`、`tools/`、`assets/` | 检索、执行工具和交付模板 |
-| `README.md`、`使用说明.md`、`CHANGELOG.md` | 快速开始、完整手册与版本记录 |
-
-发布授权、维护机配置和发版脚本由维护者本地管理，不属于 Skill 的安装内容。
+| `README.md`、`使用说明.md` | 快速开始与完整使用手册 |
 
 ## 使用前提与验证边界
 
 - 完整本地检索及安装助手需要 Python 3.9+，部分开发工具另需 Node.js；WorkBuddy 原生 ZIP 导入本身不要求手动运行这些命令。
 - 现场接口、权限和系统版本必须有实际依据；资料示例不能直接替代客户配置。
-- 编译、离线模拟、宿主调用与客户验收是不同层次。当前仍为候选版，尚未证明三宿主、双系统及全部业务场景均已通过。
+- 编译、离线模拟、宿主调用与客户验收是不同层次。具体客户端、系统版本与客户业务场景，应按实际环境分别验证。
+
+## 版本与贡献
+
+每次发布的新增、优化、修复和适用范围统一记录在 **[GitHub Releases](https://github.com/hnc327335364/cc-weaver-secondev-forge/releases)** 与 **[Gitee 发行页](https://gitee.com/hou_nachuan/cc-weaver-secondev-forge/releases)**，无需另查维护文件。
+
+欢迎通过 Issue 反馈问题，或 **Fork → 修改 → Pull Request** 提交改进。原仓库由维护者管理写入和合并，Pull Request 经维护者审核后合并。反馈时请提供平台版本、复现步骤和必要的脱敏材料。
+
+项目包含第三方工具与平台资料，其来源和原有声明仍然适用；公开可下载不代表为第三方内容额外授予许可。
 
 ---
 
 **CC Weaver Secondev Forge** · Weaver E9/E10 Secondary Development  
-[版本变更](CHANGELOG.md) · [使用说明](使用说明.md) · [Gitee](https://gitee.com/hou_nachuan/cc-weaver-secondev-forge) · [GitHub](https://github.com/hnc327335364/cc-weaver-secondev-forge)
+[版本说明](https://github.com/hnc327335364/cc-weaver-secondev-forge/releases) · [使用说明](使用说明.md) · [Gitee](https://gitee.com/hou_nachuan/cc-weaver-secondev-forge) · [GitHub](https://github.com/hnc327335364/cc-weaver-secondev-forge)
