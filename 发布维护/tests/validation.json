@@ -1,7 +1,7 @@
 {
   "date": "2026-10-30",
   "executor": "Codex",
-  "tests": 13,
+  "tests": 14,
   "result": "passed",
   "transport": "real-local-http-via-postman-simulation",
   "members_requests": {
@@ -19,12 +19,13 @@
     "final release status readback",
     "source-only release without manual ZIP",
     "command output redaction",
-    "command timeout cleanup"
+    "command timeout cleanup",
+    "CRLF Git index conversion rejected and byte-preserving attributes accepted"
   ],
   "not_tested": [
     "live release upload",
     "live attachment download",
     "customer runtime acceptance"
   ],
-  "publisher_sha256": "f723d8a0c51a699f228399656cc1f23ce0dbd96ab8e0b381f4e44398f6939a31"
+  "publisher_sha256": "b1f89a87f3da91bf73f92144d6f6dee3e3a4657745d356218b8d62a99b9ede76"
 }

@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0-rc.1",
+  "version": "0.3.0-rc.2",
   "source": "..",
   "archive_name": "weaver-cc-assistant.zip",
   "manuals": [
@@ -26,7 +26,7 @@
   "display_name": "CC Weaver Secondev Forge",
   "publication_status": "source-release-with-platform-generated-archive",
   "automatic_upload_authorized": true,
-  "publisher_setup_status": "13-local-tests-passed-live-release-pending",
+  "publisher_setup_status": "staged-byte-integrity-check-added",
   "release_notes_required": true,
   "archive_required": false,
   "repository_layout": "skill-at-root"

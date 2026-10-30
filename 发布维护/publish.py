@@ -41,6 +41,21 @@ def run(args, cwd=None, input=None, timeout=None):
     return stdout.strip()
 
 
+def verify_staged_source(checkout, source_files):
+    """检查Git暂存区，防止全局换行/过滤设置改变随包校验对象。"""
+    staged = {}
+    for entry in run(['git', 'ls-files', '--stage', '-z'], cwd=checkout).split('\0'):
+        if entry:
+            info, name = entry.split('\t', 1)
+            staged[name] = info.split()[1]
+    for name in source_files:
+        data = (Path(checkout) / name).read_bytes()
+        header = ('blob ' + str(len(data))).encode() + b'\0'
+        oid = staged.get(name, '')
+        expected = (hashlib.sha1 if len(oid) == 40 else hashlib.sha256)(header + data).hexdigest()
+        if oid != expected: raise ValueError('Git暂存内容与源文件不一致，停止发布：' + name)
+
+
 def sha(path):
     h = hashlib.sha256()
     with Path(path).open('rb') as f:
@@ -189,9 +204,10 @@ def synchronize(config, repos, apis):
         if (HERE / 'tests').exists(): shutil.copytree(HERE / 'tests', maintenance / 'tests', ignore=shutil.ignore_patterns('__pycache__', '*.pyc'))
         (maintenance / 'release.json').write_text(json.dumps(remote_config, ensure_ascii=False, indent=2) + '\n')
         (checkout / '.gitignore').write_text('.DS_Store\n__MACOSX/\n__pycache__/\n*.pyc\n.env\n')
-        (checkout / '.gitattributes').write_text('/发布维护 export-ignore\n/.gitignore export-ignore\n/.gitattributes export-ignore\n')
+        (checkout / '.gitattributes').write_text('* -text\n/发布维护 export-ignore\n/.gitignore export-ignore\n/.gitattributes export-ignore\n')
         # 文件已按发布清单复制；强制纳入，避免来源 .gitignore 静默漏掉运行依赖。
-        run(['git', 'add', '--force', '--all'], cwd=folder)
+        run(['git', '-c', 'core.autocrlf=false', 'add', '--force', '--all'], cwd=folder)
+        verify_staged_source(checkout, source_files)
         changed = run(['git', 'diff', '--cached', '--name-only'], cwd=folder)
         if changed:
             identity = apis['github'].request('/user')

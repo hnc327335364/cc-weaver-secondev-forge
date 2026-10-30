@@ -74,6 +74,18 @@ class ReleaseTests(unittest.TestCase):
         self.note.write_text(self.original.replace('release_status: "candidate"','release_status: "stable"'))
         with self.assertRaises(ValueError):p.release_notes(self.config)
 
+class GitIntegrityTests(unittest.TestCase):
+    def test_rejects_converted_index_and_accepts_preserved_bytes(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);p.run(['git','init','-q',temp])
+            sample=root/'sample.properties';sample.write_bytes(b'key=value\r\n')
+            p.run(['git','-c','core.autocrlf=input','add','sample.properties'],cwd=temp)
+            with self.assertRaisesRegex(ValueError,'暂存内容与源文件不一致'):
+                p.verify_staged_source(root,{'sample.properties':{}})
+            (root/'.gitattributes').write_text('* -text\n')
+            p.run(['git','-c','core.autocrlf=false','add','--renormalize','.'],cwd=temp)
+            p.verify_staged_source(root,{'sample.properties':{}})
+
 class RunnerTests(unittest.TestCase):
     def test_success(self):
         self.assertEqual(p.run([sys.executable,'-c','print("ok")']), 'ok')

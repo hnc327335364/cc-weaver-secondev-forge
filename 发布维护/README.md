@@ -22,7 +22,7 @@ tags: ["domain/ai-resources", "type/maintenance", "folder/02-skills"]
 
 ## 每版必备发版说明
 
-每个版本在 `release-notes/v版本号.md` 独立记录，使用 [模板](release-notes/TEMPLATE.md)。本版见 [v0.3.0-rc.1](release-notes/v0.3.0-rc.1.md)。必须填写版本概述、新增功能、优化改进、问题修复、兼容性与影响、验证结果、已知限制、升级与回退；无相关变更时明确写“本版无此类变更”。
+每个版本在 `release-notes/v版本号.md` 独立记录，使用 [模板](release-notes/TEMPLATE.md)。本版见 [v0.3.0-rc.2](release-notes/v0.3.0-rc.2.md)。必须填写版本概述、新增功能、优化改进、问题修复、兼容性与影响、验证结果、已知限制、升级与回退；无相关变更时明确写“本版无此类变更”。
 
 优化写清原问题、改动和已验证效果；规则修正不等于客户故障已修复。验证注明环境、结果和证据编号；未验证不能写通过。候选版保留预发布标识，不冒充生产验收版。
 
