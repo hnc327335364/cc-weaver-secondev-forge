@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "userGoal": "",
+  "scope": {
+    "allowed": [],
+    "excluded": [],
+    "authorizationEvidence": ""
+  },
+  "baseline": {
+    "value": null,
+    "source": null,
+    "status": "UNVERIFIED"
+  },
+  "units": [],
+  "unitTemplate": {
+    "id": "",
+    "goal": "",
+    "dependsOn": [],
+    "domain": "unknown",
+    "evidence": [],
+    "choice": {
+      "selected": "",
+      "reason": "",
+      "conventions": []
+    },
+    "gaps": [],
+    "files": [],
+    "verification": {
+      "localStructure": "UNVERIFIED",
+      "compile": "UNVERIFIED",
+      "tests": "UNVERIFIED",
+      "package": "UNVERIFIED",
+      "import": "UNVERIFIED",
+      "targetUI": "UNVERIFIED",
+      "nonTargetIsolation": "UNVERIFIED",
+      "onlineBusiness": "UNVERIFIED"
+    }
+  },
+  "decision": "BLOCK"
+}

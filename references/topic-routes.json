@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "topics": [
+    {
+      "id": "e9-list-export",
+      "title": "E9 列表导出",
+      "aliases": [
+        "ModeList",
+        "列表导出",
+        "E9导出"
+      ],
+      "source_paths": [
+        "02-Weaver-Knowledge 泛微知识库/01-E9 E9资料/E9表单建模前端接口API.md",
+        "02-Weaver-Knowledge 泛微知识库/01-E9 E9资料/WeaTable组件开发专题.md"
+      ],
+      "guidance": "references/e9-list-export.md；条件值不是列表结果，先核对真实调用"
+    },
+    {
+      "id": "e9-form",
+      "title": "E9 流程表单",
+      "aliases": [
+        "WfForm",
+        "流程表单"
+      ],
+      "source_paths": [
+        "02-Weaver-Knowledge 泛微知识库/01-E9 E9资料/E9流程表单前端接口API.md"
+      ],
+      "guidance": "按方法名locate；核对初始化、事件与现场版本"
+    },
+    {
+      "id": "e9-action",
+      "title": "E9 Action",
+      "aliases": [
+        "Action",
+        "流程Action"
+      ],
+      "source_paths": [
+        "02-Weaver-Knowledge 泛微知识库/01-E9 E9资料/E9流程Action与节点处理专题.md"
+      ],
+      "guidance": "核对节点、返回与事务，不推定失败处理"
+    },
+    {
+      "id": "e10-form",
+      "title": "E10 表单",
+      "aliases": [
+        "WeFormSDK",
+        "E10表单"
+      ],
+      "source_paths": [
+        "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/00-E10 资料索引.md",
+        "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/EB表单RPC接口整理.md"
+      ],
+      "guidance": "资料来源先核对；标准表单与EB不是同一契约"
+    },
+    {
+      "id": "e10-api",
+      "title": "E10 API",
+      "aliases": [
+        "E10接口",
+        "E10后端"
+      ],
+      "source_paths": [
+        "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/00-E10 资料索引.md",
+        "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/e10平台定制开发指引.md"
+      ],
+      "guidance": "先索引再定位具体API；资料版本不是现场基线"
+    }
+  ]
+}

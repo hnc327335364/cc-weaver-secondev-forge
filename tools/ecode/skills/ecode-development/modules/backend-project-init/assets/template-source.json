@@ -1,0 +1,9 @@
+{
+  "templateVersion": "secondev-demo-1.3.2",
+  "sourceUrl": null,
+  "sourceUrlNote": "来源为内部地址，不随分发包保留；仅使用随包固定摘要快照，不支持远程模板下载。",
+  "sha256": "b49bd903227ca7411c0e9227cc23b4cfd8c930bb8e1fbe375019a13ba5c6b877",
+  "sourceEvidence": "git 779ee788^:.ecode/docs/specs/init-spec-full.md section 4",
+  "snapshotOrigin": "Previously downloaded local cache, not freshly verified against remote",
+  "remoteVerification": "UNVERIFIED: connection timeout 2026-09-15"
+}

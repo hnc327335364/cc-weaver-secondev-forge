@@ -1,0 +1,47 @@
+{
+  "e9": {
+    "origin": "https://e9.example.invalid",
+    "baseline": "",
+    "contractEvidence": "",
+    "appId": "",
+    "userId": "",
+    "publicKeyEnv": "ECODE_E9_PUBLIC_KEY",
+    "secretEnv": "ECODE_E9_SECRET",
+    "maxRecords": 10000
+  },
+  "e10": {
+    "origin": "https://e10.example.invalid",
+    "baseline": "",
+    "contractEvidence": "",
+    "auth": "oauth",
+    "appKey": "",
+    "appSecretEnv": "ECODE_E10_APP_SECRET",
+    "corpId": "",
+    "operatorId": ""
+  },
+  "sync": {
+    "subcompanyIds": [],
+    "codePrefixes": {"subcompany": "E9-S-", "department": "E9-D-", "position": "E9-P-"},
+    "statusMap": {},
+    "orgStatus": "",
+    "positionCanceled": "",
+    "existing": {"subcompany": [], "department": [], "position": []},
+    "maxRecords": 10000,
+    "batchSize": 50,
+    "backupEvidence": "",
+    "endpoints": {
+      "subcompany": "/api/hrm/restful/syncSubcompany",
+      "department": "/api/hrm/restful/syncDepartment",
+      "position": "/api/hrm/restful/syncPosition",
+      "employee": "/api/hrm/restful/syncEmployee"
+    }
+  },
+  "hr": {
+    "origin": "https://e10.example.invalid",
+    "baseline": "",
+    "contractEvidence": "",
+    "auth": "session",
+    "tokenEnv": "ECODE_HR_TOKEN",
+    "operations": {}
+  }
+}

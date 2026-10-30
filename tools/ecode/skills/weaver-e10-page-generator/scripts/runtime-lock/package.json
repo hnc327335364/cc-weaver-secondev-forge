@@ -1,0 +1,10 @@
+{
+  "name": "cc-page-runtime-isolated-verification",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Temporary dependency inspection only; not a distributable runtime",
+  "dependencies": {
+    "ui-code-agent": "0.1.71",
+    "ui-code-mcp": "0.2.34"
+  }
+}

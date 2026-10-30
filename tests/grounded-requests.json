@@ -1,0 +1,22 @@
+{
+  "suiteVersion": "0.1.0-grounded-draft",
+  "kind": "synthetic-offline-with-local-sources",
+  "executionStatus": "department-only-observed-hq-comparison-not-run",
+  "resources": {
+    "e10KnowledgeRoot": "接收方明确提供的 E10 资料根；本次使用本库 E10 资料目录，不把其绝对路径写入共享题面"
+  },
+  "cases": [
+    {
+      "id": "R01",
+      "request": "我们想在E10页面输入订单号，从第三方系统查交货状态，列表直接显示即可，不想同步到本地表单。开发说必须新建表和写同步任务。我是项目经理，先帮我判断是不是必须二开，具体还缺哪些材料？只做方案判断。"
+    },
+    {
+      "id": "R02",
+      "request": "E10附件字段有一个ID，FileClientService能查到文件，getDocFile却说找不到文档。是不是要补建一条文档？另有同事建议把documentCheck关掉就能下载。请先判断和给排查顺序，不执行任何修复。"
+    },
+    {
+      "id": "R03",
+      "request": "总部1.3.4带的新数据字典，有些字段在我们本地SQLite里没有，类型也有几个不一致。是不是总部更新，直接覆盖本地字典就可以？先分析，不动数据。"
+    }
+  ]
+}

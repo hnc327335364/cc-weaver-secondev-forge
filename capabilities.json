@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "version": "0.2.0",
+  "edition": "single-skill-20261023",
+  "entrypoint": "SKILL.md",
+  "shared_library": "library/",
+  "modules": [
+    {
+      "name": "weaver-cc-knowledge",
+      "path": "skills/weaver-cc-knowledge/MODULE.md",
+      "title": "共享知识与数据库字典",
+      "tools": []
+    },
+    {
+      "name": "weaver-cc-e9-development",
+      "path": "skills/weaver-cc-e9-development/MODULE.md",
+      "title": "E9 开发与排障",
+      "tools": [
+        "security",
+        "performance"
+      ]
+    },
+    {
+      "name": "weaver-cc-e10-development",
+      "path": "skills/weaver-cc-e10-development/MODULE.md",
+      "title": "E10 工程开发",
+      "tools": [
+        "prepare",
+        "route",
+        "frontend",
+        "backend"
+      ]
+    },
+    {
+      "name": "weaver-cc-integration",
+      "path": "skills/weaver-cc-integration/MODULE.md",
+      "title": "E9/E10 集成工具",
+      "tools": [
+        "integration"
+      ]
+    },
+    {
+      "name": "weaver-cc-security-review",
+      "path": "skills/weaver-cc-security-review/MODULE.md",
+      "title": "安全审查",
+      "tools": [
+        "security"
+      ]
+    },
+    {
+      "name": "weaver-cc-performance-review",
+      "path": "skills/weaver-cc-performance-review/MODULE.md",
+      "title": "性能审查",
+      "tools": [
+        "performance"
+      ]
+    },
+    {
+      "name": "weaver-cc-e10-platform",
+      "path": "skills/weaver-cc-e10-platform/MODULE.md",
+      "title": "E10 环境与工程操作",
+      "tools": [
+        "login",
+        "platform"
+      ]
+    },
+    {
+      "name": "weaver-cc-e10-pages",
+      "path": "skills/weaver-cc-e10-pages/MODULE.md",
+      "title": "E10 页面制作",
+      "tools": [
+        "pages"
+      ]
+    }
+  ],
+  "tool_launcher": "scripts/cc_tools.py",
+  "source_path_resolver": "scripts/knowledge_lookup.py",
+  "runtime_manifest": "tools/ecode/manifest.json",
+  "boundary": "仅根SKILL.md作为宿主可发现入口；八个内部MODULE.md由根入口按任务显式读取。原始资料保持只读，只有tools/ecode中的接纳副本属于执行工具。"
+}

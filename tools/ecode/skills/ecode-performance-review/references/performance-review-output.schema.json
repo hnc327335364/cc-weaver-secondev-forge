@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ecode-performance-review-output-1.1",
+  "title": "e-code performance review output",
+  "type": "object",
+  "required": ["schemaVersion", "auditType", "auditStage", "reviewId", "artifactHash", "rulePackVersion", "inputFiles", "reviewInput", "decision", "riskState", "assuranceLevel", "runtimeValidationStatus", "summary", "findings", "rulesApplied", "rulesSkipped", "verificationNeeded", "errors"],
+  "properties": {
+    "schemaVersion": {"type": "string", "const": "1.1"},
+    "auditType": {"type": "string", "const": "PERFORMANCE"},
+    "auditStage": {"type": "string", "enum": ["FILE_SAVE", "PROJECT_IMPORT", "PROJECT_MIGRATION", "PROJECT_RELEASE", "JAR_RELEASE", "UNKNOWN"]},
+    "reviewId": {"type": "string", "pattern": "^PERF-[a-f0-9]{24}$"},
+    "artifactHash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "rulePackVersion": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "inputFiles": {"type": "array", "items": {"type": "object", "required": ["path", "sha256"], "properties": {"path": {"type": "string"}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}, "additionalProperties": false}},
+    "reviewInput": {"type": "object", "required": ["completeSnapshot", "loadedChecklists", "externalEvidence"], "properties": {"completeSnapshot": {"type": "boolean"}, "loadedChecklists": {"type": "array", "items": {"type": "string"}}, "externalEvidence": {"type": "array", "items": {"type": "object", "required": ["source", "retrievedAt", "digest", "version"], "properties": {"source": {"type": "string"}, "retrievedAt": {"type": "string"}, "digest": {"type": "string"}, "version": {"type": "string"}}, "additionalProperties": false}}}, "additionalProperties": false},
+    "decision": {"type": "string", "enum": ["PASS", "BLOCK"]},
+    "riskState": {"type": "string", "enum": ["CLEAN", "WARNINGS", "BLOCKED"]},
+    "assuranceLevel": {"type": "string", "enum": ["STATIC_ONLY", "STATIC_AND_RUNTIME"]},
+    "runtimeValidationStatus": {"type": "string", "enum": ["NOT_PROVIDED", "PARTIAL", "VERIFIED"]},
+    "summary": {"type": "object", "required": ["filesReviewed", "errorCount", "warnCount", "policyCount", "performanceRiskCount"], "properties": {"filesReviewed": {"type": "integer", "minimum": 0}, "errorCount": {"type": "integer", "minimum": 0}, "warnCount": {"type": "integer", "minimum": 0}, "policyCount": {"type": "integer", "minimum": 0}, "performanceRiskCount": {"type": "integer", "minimum": 0}}, "additionalProperties": false},
+    "findings": {"type": "array", "items": {"type": "object", "required": ["ruleId", "rootCauseKey", "findingType", "severity", "title", "file", "startLine", "endLine", "evidence", "evidenceType", "triggerPath", "performanceImpact", "policyBasis", "remediation", "fixExample"], "properties": {"ruleId": {"type": "string"}, "rootCauseKey": {"type": "string"}, "findingType": {"type": "string", "enum": ["PERFORMANCE_RISK", "PLATFORM_POLICY"]}, "severity": {"type": "string", "enum": ["ERROR", "WARN"]}, "title": {"type": "string"}, "file": {"type": "string"}, "startLine": {"type": "integer", "minimum": 1}, "endLine": {"type": "integer", "minimum": 1}, "evidence": {"type": "string"}, "evidenceType": {"type": "string", "enum": ["SOURCE", "CONFIG", "DEPENDENCY", "ARTIFACT", "RUNTIME"]}, "triggerPath": {"type": "string"}, "performanceImpact": {"type": "string"}, "policyBasis": {"type": "string"}, "remediation": {"type": "string"}, "fixExample": {"type": "string"}}, "additionalProperties": false}},
+    "rulesApplied": {"type": "array", "items": {"type": "string"}},
+    "rulesSkipped": {"type": "array", "items": {"type": "object", "required": ["ruleId", "reason"], "properties": {"ruleId": {"type": "string"}, "reason": {"type": "string"}}, "additionalProperties": false}},
+    "verificationNeeded": {"type": "array", "items": {"type": "object", "required": ["ruleId", "file", "reason", "requiredEvidence"], "properties": {"ruleId": {"type": "string"}, "file": {"type": "string"}, "reason": {"type": "string"}, "requiredEvidence": {"type": "string"}}, "additionalProperties": false}},
+    "errors": {"type": "array", "items": {"type": "object", "required": ["code", "severity", "message", "artifact", "missingItems"], "properties": {"code": {"type": "string"}, "severity": {"type": "string", "const": "ERROR"}, "message": {"type": "string"}, "artifact": {"type": "string"}, "missingItems": {"type": "array", "items": {"type": "string"}}}, "additionalProperties": false}}
+  },
+  "additionalProperties": false
+}

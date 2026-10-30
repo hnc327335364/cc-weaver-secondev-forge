@@ -1,0 +1,780 @@
+{
+  "schema_version": 1,
+  "status": "internal-trial-subset",
+  "reviewed_at": "2026-10-22",
+  "scope": "22篇精选说明卡，配合随包library中的E9/E10正文、字典与案例使用；不是仅摘要交付。",
+  "completeness": "此清单仅覆盖knowledge目录。完整运行资料范围见library/manifest.json与catalog.sqlite；不包括E8历史API、运维大树和明确作废资料。",
+  "transforms": [
+    "替换库内frontmatter为可迁移记录",
+    "迁移随包双链；外部双链改为明确未随包的来源名称",
+    "仅将清单显式指定的同目录来源记录链接改为未随包说明",
+    "清单明确指定时，仅将末尾来源定位节改为来源指纹说明",
+    "保留技术正文、代码和版本/未验证边界",
+    "仅对清单明确选中的副本追加分发说明，原稿正文与代码不变"
+  ],
+  "security_boundary": "固定来源人工选取加常见模式扫描；非完整DLP审计，不保证检测所有敏感信息。",
+  "entries": [
+    {
+      "id": "e9-form-lifecycle",
+      "title": "E9表单前端生命周期与平台分流",
+      "platform": "E9",
+      "file": "e9-form-lifecycle.md",
+      "sha256": "5021730b9646031c6d657c0aa1163f9dcb1968ff2ec8d679205bb2af6fd80f76",
+      "bytes": 7695,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/01-E9 E9资料/E9表单前端生命周期与平台分流.md",
+      "origin_sha256": "380ce3fd5c219b898e0b4725f312ecfd646212f2fff9fb5f3f8c5fe27c70d4d7",
+      "raw_sources_included": false,
+      "external_references": [],
+      "omitted_source_tail": "## 来源定位",
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e9-backend-boundaries",
+      "title": "E9后端改动与验收边界",
+      "platform": "E9",
+      "file": "e9-backend-boundaries.md",
+      "sha256": "528f4fc369388c7fa864a5fa3f9a1c7eb83d90444b116f186777f8b9f8b74a9e",
+      "bytes": 8807,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/01-E9 E9资料/E9后端改动与验收边界.md",
+      "origin_sha256": "deda175d328a36034ca36bc542ce145c0e7e61fa7e2263f3b1b3672daa1ce658",
+      "raw_sources_included": false,
+      "external_references": [],
+      "omitted_source_tail": "## 来源定位",
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-lowcode-selection",
+      "title": "E10配置低代码与二开选型指南",
+      "platform": "E10",
+      "file": "e10-lowcode-selection.md",
+      "sha256": "4dec7d67d4e9051033d4663adc26a7cdf834d05a9d66548ebf85862eaa18353d",
+      "bytes": 17428,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10配置低代码与二开选型指南.md",
+      "origin_sha256": "9f74b0948654f984bbc6a58edd712f3033da1244de1d5968664bcdb9bccfd018",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "表单设计：显示属性联动",
+          "origin_reference": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4/skills/e10-local-knowledge/modules/e10-module-knowledge/references/docs/1967582222992370906.md",
+          "included": true,
+          "location": "library"
+        },
+        {
+          "label": "表单设置：字段联动—公式联动",
+          "origin_reference": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4/skills/e10-local-knowledge/modules/e10-module-knowledge/references/docs/1967626077037170945.md",
+          "included": true,
+          "location": "library"
+        },
+        {
+          "label": "表单设置：字段查重校验",
+          "origin_reference": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4/skills/e10-local-knowledge/modules/e10-module-knowledge/references/docs/1967574079419370896.md",
+          "included": true,
+          "location": "library"
+        },
+        {
+          "label": "页面组件：筛选组件-联动图表统计",
+          "origin_reference": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4/skills/e10-local-knowledge/modules/e10-module-knowledge/references/docs/1965182651971496482.md",
+          "included": true,
+          "location": "library"
+        },
+        {
+          "label": "组件数据源：动作流",
+          "origin_reference": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4/skills/e10-local-knowledge/modules/e10-module-knowledge/references/docs/1970019371735218899.md",
+          "included": true,
+          "location": "library"
+        },
+        {
+          "label": "自定义动作流问题归纳总结",
+          "origin_reference": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4/skills/e10-local-knowledge/modules/e10-module-knowledge/references/docs/1256668376850022567.md",
+          "included": true,
+          "location": "library"
+        },
+        {
+          "label": "自定义页面",
+          "origin_reference": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4/skills/e10-local-knowledge/modules/e10-module-knowledge/references/docs/1183913284441620566.md",
+          "included": true,
+          "location": "library"
+        },
+        {
+          "label": "自定义动作流组件",
+          "origin_reference": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4/skills/e10-local-knowledge/modules/e10-module-knowledge/references/docs/1181428280677179395.md",
+          "included": true,
+          "location": "library"
+        },
+        {
+          "label": "专项动作流组件可编辑",
+          "origin_reference": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4/skills/e10-local-knowledge/modules/e10-module-knowledge/references/docs/1203283101583212544.md",
+          "included": true,
+          "location": "library"
+        },
+        {
+          "label": "表单字段分权限展示",
+          "origin_reference": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4/skills/e10-local-knowledge/modules/e10-module-knowledge/references/docs/1967272762089775486.md",
+          "included": true,
+          "location": "library"
+        },
+        {
+          "label": "字段联动搭建常见问题归纳",
+          "origin_reference": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4/skills/e10-local-knowledge/modules/e10-module-knowledge/references/docs/1235509521068925014.md",
+          "included": true,
+          "location": "library"
+        },
+        {
+          "label": "E10工具包1.3.4知识覆盖与补充清单",
+          "origin_reference": "E10工具包1.3.4知识覆盖与补充清单",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "E10表单引擎JSSDK文档",
+          "origin_reference": "E10表单引擎JSSDK文档",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "E10应用建模JS-SDK文档",
+          "origin_reference": "E10应用建模JS-SDK文档",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-file-permissions",
+      "title": "E10文件ID与文档ID及附件权限专题",
+      "platform": "E10",
+      "file": "e10-file-permissions.md",
+      "sha256": "4f063f6ee2dc9c424d60df885a7d9660ddd84b7b15deb19491ac05a834dff674",
+      "bytes": 13058,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10文件ID与文档ID及附件权限专题.md",
+      "origin_sha256": "288fbef9495cbe39730a89033501c2506125cf7e528bff6edae37b633cc40101",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "文件上传上传下载SDK",
+          "origin_reference": "文件上传上传下载SDK",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "文件上传上传下载SDK",
+          "origin_reference": "文件上传上传下载SDK",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-form-sdk-examples",
+      "title": "E10表单SDK实例与字段操作示例补充",
+      "platform": "E10",
+      "file": "e10-form-sdk-examples.md",
+      "sha256": "1203038aee09ede754205e9c6d1bc9e1fa904a475ec41b3e13c741535fc5c403",
+      "bytes": 18991,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10表单SDK实例与字段操作示例补充.md",
+      "origin_sha256": "131f03542008aee2a599641c65070a31222e32a480e00f4976c511b77f8eb2c1",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "E10表单引擎JSSDK文档",
+          "origin_reference": "E10表单引擎JSSDK文档",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "来源核对数据",
+          "origin_reference": "E10表单SDK示例来源核对-20261021.json",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-case-selection",
+      "title": "E10参考案例选型与改造卡",
+      "platform": "E10",
+      "file": "e10-case-selection.md",
+      "sha256": "a1fb198659249cdce2c5a68de128370fdeeae2fa0f493f8d9dd8189bc6d59268",
+      "bytes": 16682,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10参考案例选型与改造卡.md",
+      "origin_sha256": "fdfc4d3057a193d5a1de12bfee1875f763c8f9bb196b5e7b5b6249f3d0c31057",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "来源证据 JSON",
+          "origin_reference": "E10参考案例选型-20261021.json",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "E10表单引擎JSSDK文档",
+          "origin_reference": "E10表单引擎JSSDK文档",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "E10应用建模JS-SDK文档",
+          "origin_reference": "E10应用建模JS-SDK文档",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-troubleshooting",
+      "title": "E10二开不生效与运行错误定位",
+      "platform": "E10",
+      "file": "e10-troubleshooting.md",
+      "sha256": "b765b0719c3d940f5bb7f35b44c55ee04e989bd98190edbdee37b20f06fc4ea0",
+      "bytes": 18534,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10二开不生效与运行错误定位.md",
+      "origin_sha256": "b016269579d832b0a5931c5e12b5dc91afd571dce53e6e800ba582ca3c4842d2",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "来源核对数据",
+          "origin_reference": "E10排障来源核对-20261021.json",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-form-backend-contracts",
+      "title": "E10表单后端调用与数据操作契约补充",
+      "platform": "E10",
+      "file": "e10-form-backend-contracts.md",
+      "sha256": "51cc5d7768298d722fd512674bce4e202e9b3ae1d2070adda06e216c0db920bd",
+      "bytes": 20065,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10表单后端调用与数据操作契约补充.md",
+      "origin_sha256": "7733a12b937956977eac6fbcb94679e6f57be919d42198e10a6071dcbaf4bca5",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "EB表单RPC接口整理",
+          "origin_reference": "EB表单RPC接口整理",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "证据记录",
+          "origin_reference": "E10表单后端契约证据-20261021.json",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "后端二次开发规范",
+          "origin_reference": "后端二次开发规范",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-partial-update",
+      "title": "E10主明细局部更新契约与载荷示例",
+      "platform": "E10",
+      "file": "e10-partial-update.md",
+      "sha256": "1c1c56845886c47fb84104119aa01da157edf99330552acfe07c6a76c5e5180e",
+      "bytes": 14490,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10主明细局部更新契约与载荷示例.md",
+      "origin_sha256": "95227bf624f478399e10cdfb1591c1f5af90133cf836d24729ce4fb8c2678abe",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "EB表单RPC接口整理",
+          "origin_reference": "EB表单RPC接口整理",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "来源核对记录",
+          "origin_reference": "E10主明细局部更新来源核对-20261021.json",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-external-components",
+      "title": "E10外部网页嵌入组件接入与权限边界",
+      "platform": "E10",
+      "file": "e10-external-components.md",
+      "sha256": "734e8680b409193c76f076cc9f74ff382095ddb7bb803f85c7d1ec182d880b4b",
+      "bytes": 16571,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10外部网页嵌入组件接入与权限边界.md",
+      "origin_sha256": "603b5a26302b6c581a7bb4a9c602e41e1e3a88b17b64fb90f83ea8e93e42d0fa",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "E10表单引擎JSSDK文档",
+          "origin_reference": "E10表单引擎JSSDK文档",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "E10流程详情前端JS-SDK文档",
+          "origin_reference": "E10流程详情前端JS-SDK文档",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "E10应用建模JS-SDK文档",
+          "origin_reference": "E10应用建模JS-SDK文档",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "统一认证接入-自定义接口开发",
+          "origin_reference": "统一认证接入-自定义接口开发",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "来源核对记录",
+          "origin_reference": "E10外部组件来源核对-20261021.json",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-form-permission-entry",
+      "title": "E10表单必填与记录权限及双端入口核查",
+      "platform": "E10",
+      "file": "e10-form-permission-entry.md",
+      "sha256": "11d73f858d6c70b56dbe133fb0d8390cb9c99a5477df21d3db6c3c5765a44e85",
+      "bytes": 9906,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10表单必填与记录权限及双端入口核查.md",
+      "origin_sha256": "2fc72d065f550e40bb8b4461e1ecb1c5501c74ce6dc0082e48b737559aa3fb23",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "来源核对记录",
+          "origin_reference": "E10表单权限入口来源核对-20261021.json",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "模块说明",
+          "origin_reference": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4/skills/e10-local-knowledge/modules/e10-module-knowledge/MODULE.md",
+          "included": true,
+          "location": "library"
+        },
+        {
+          "label": "表单中设置字段必填但审批时仍无法填写",
+          "origin_reference": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4/skills/e10-local-knowledge/modules/e10-module-knowledge/references/docs/1970255433258257553.md",
+          "included": true,
+          "location": "library"
+        },
+        {
+          "label": "为什么设置了表单共享权限，还是提示无权限查看数据",
+          "origin_reference": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4/skills/e10-local-knowledge/modules/e10-module-knowledge/references/docs/1970174848271957110.md",
+          "included": true,
+          "location": "library"
+        },
+        {
+          "label": "应用移动端菜单如何配置",
+          "origin_reference": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4/skills/e10-local-knowledge/modules/e10-module-knowledge/references/docs/1969882937945484850.md",
+          "included": true,
+          "location": "library"
+        },
+        {
+          "label": "移动端和PC端菜单显示不一致",
+          "origin_reference": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4/skills/e10-local-knowledge/modules/e10-module-knowledge/references/docs/1967575466108470901.md",
+          "included": true,
+          "location": "library"
+        },
+        {
+          "label": "表单字段分权限展示",
+          "origin_reference": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4/skills/e10-local-knowledge/modules/e10-module-knowledge/references/docs/1967272762089775486.md",
+          "included": true,
+          "location": "library"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-backend-infrastructure",
+      "title": "E10后端基础设施选型与上下文边界",
+      "platform": "E10",
+      "file": "e10-backend-infrastructure.md",
+      "sha256": "49627356baed895327ba66971fb3d4601b0ecd3137469ad3b0f831f8d55b0d83",
+      "bytes": 16194,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10后端基础设施选型与上下文边界.md",
+      "origin_sha256": "2091535150a3e4d8b046bfcc89243bc35b1b67dd7c70e3eaea2d24ddac5e4482",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "e10平台定制开发指引",
+          "origin_reference": "e10平台定制开发指引",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "后端二次开发规范",
+          "origin_reference": "后端二次开发规范",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "来源核对记录",
+          "origin_reference": "E10后端基础设施来源核对-20261021.json",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "e10平台定制开发指引",
+          "origin_reference": "e10平台定制开发指引",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "后端二次开发规范",
+          "origin_reference": "后端二次开发规范",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-import-export-boundaries",
+      "title": "E10导入导出操作日志接口与资料缺口",
+      "platform": "E10",
+      "file": "e10-import-export-boundaries.md",
+      "sha256": "26dc36709412ddf4b6e0b2c0e472c8fdd85248c982a6b62b7f73bb99fb9a04a2",
+      "bytes": 7691,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10导入导出操作日志接口与资料缺口.md",
+      "origin_sha256": "18c8defd6e7e4a92a3460fdd312c0c7a6a7a2c5252dd5567e2085af295492ca5",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "e10平台定制开发指引",
+          "origin_reference": "e10平台定制开发指引",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "文件上传上传下载SDK",
+          "origin_reference": "文件上传上传下载SDK",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "导入导出服务数据库模块索引",
+          "origin_reference": "01-Database 数据库知识/99-SourceFiles 原始资料/Obsidian泛微E10知识库/模块索引/导入导出服务",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "E10导入导出来源核对-20261021.json",
+          "origin_reference": "E10导入导出来源核对-20261021.json",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-archive-boundaries",
+      "title": "E10档案归档Dubbo与HTTP接口边界",
+      "platform": "E10",
+      "file": "e10-archive-boundaries.md",
+      "sha256": "6fda536ded50a8bf3300bf9c127313747445fafbd0ed7c04726b925d591dd18e",
+      "bytes": 17274,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10档案归档Dubbo与HTTP接口边界.md",
+      "origin_sha256": "284682e0ae084d1301c237d8281b391941e6ddfd702b07b82e9c94b35093bfad",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "E10-对外归档",
+          "origin_reference": "文书定/E10-对外归档",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "收集库推送",
+          "origin_reference": "文书定/收集库推送",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "预归档库推送",
+          "origin_reference": "文书定/预归档库推送",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "E10档案归档来源核对-20261021.json",
+          "origin_reference": "E10档案归档来源核对-20261021.json",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "E10-对外归档",
+          "origin_reference": "文书定/E10-对外归档",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "收集库推送",
+          "origin_reference": "文书定/收集库推送",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "预归档库推送",
+          "origin_reference": "文书定/预归档库推送",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-contract-boundaries",
+      "title": "E10合同模板与条款接口及文件Hook边界",
+      "platform": "E10",
+      "file": "e10-contract-boundaries.md",
+      "sha256": "505c1a71b3b50173065bbd98cb2e36096551b95052d19bca30675351ca946889",
+      "bytes": 14545,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10合同模板与条款接口及文件Hook边界.md",
+      "origin_sha256": "9c48fa97ef85e2100c3fd17ae6dadcb5ff3c1c132e4b05332699b08c8b7b0ee3",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "e10平台定制开发指引",
+          "origin_reference": "e10平台定制开发指引",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "E10工具包1.3.4知识覆盖与补充清单",
+          "origin_reference": "E10工具包1.3.4知识覆盖与补充清单",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "好买合同同步逐附件记录",
+          "origin_reference": "04-Projects 项目笔记/H-好买/E8/20260916-合同信息同步E10/04-Implementation 实施记录/20261021-逐附件数据与wjid调整",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "E10合同模板来源核对-20261021.json",
+          "origin_reference": "E10合同模板来源核对-20261021.json",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-unified-todo-boundaries",
+      "title": "E10统一待办ECODE与审批推送边界",
+      "platform": "E10",
+      "file": "e10-unified-todo-boundaries.md",
+      "sha256": "f4feb2072fc3c673cf19ba62309a884e9f9d074c8ccde15552d534185a2781c5",
+      "bytes": 12108,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10统一待办ECODE与审批推送边界.md",
+      "origin_sha256": "753c37f3e5f5c8855162ace8a7c02d06f5d62b29150820c5de18c735c31bf5cf",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "统一审批推送开发手册",
+          "origin_reference": "统一审批推送开发手册",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "E10统一待办来源核对-20261021.json",
+          "origin_reference": "E10统一待办来源核对-20261021.json",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-auth-boundaries",
+      "title": "E10集成登录与认证Dubbo接口边界",
+      "platform": "E10",
+      "file": "e10-auth-boundaries.md",
+      "sha256": "9def43715818e0dd8c6d00a26f519b89c2d529a72c10e2fbd0a3de89fe457769",
+      "bytes": 21166,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10集成登录与认证Dubbo接口边界.md",
+      "origin_sha256": "b1ca2ae68c30a0beae42c8a04adfaa95a5017c055ee31339aa778c1fa979f2f1",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "统一认证接入-自定义接口开发",
+          "origin_reference": "统一认证接入-自定义接口开发",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "E9跳转E10免登配置与部署说明",
+          "origin_reference": "../04-Solutions 方案参考/E9跳转E10免登配置与部署说明",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "E10集成登录来源核对-20261021.json",
+          "origin_reference": "E10集成登录来源核对-20261021.json",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-basic-services-boundaries",
+      "title": "E10基础服务申请处理与模块权限接口边界",
+      "platform": "E10",
+      "file": "e10-basic-services-boundaries.md",
+      "sha256": "70754d71d8e57588e60953e4ab94a1d5be6d08ac8dd9fe070e105ac05e4b373d",
+      "bytes": 20223,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10基础服务申请处理与模块权限接口边界.md",
+      "origin_sha256": "9e228a8daa206790a5653c1eb924a24e4952f373ca828b92fa1589945e64dc0c",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "来源核对记录",
+          "origin_reference": "E10基础服务来源核对-20261021.json",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "E10登录与主框架前端扩展边界",
+          "origin_reference": "E10登录与主框架前端扩展边界",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-message-center-boundaries",
+      "title": "E10消息中心发送与状态处理边界",
+      "platform": "E10",
+      "file": "e10-message-center-boundaries.md",
+      "sha256": "b766bad282175c0d89fc279d6c229358383525aa9cf09d24d9a5e143fdae0cd1",
+      "bytes": 19660,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10消息中心发送与状态处理边界.md",
+      "origin_sha256": "aa879bad66341bd0daeb251ac61d494bfaecfdd5562802c4d7419fde1b8fce19",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "E10消息中心来源核对-20261021.json",
+          "origin_reference": "E10消息中心来源核对-20261021.json",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-hr-identity-boundaries",
+      "title": "E10人员组织查询与身份回显边界",
+      "platform": "E10",
+      "file": "e10-hr-identity-boundaries.md",
+      "sha256": "6bfede990c35d3225154acd0800686c28439e3b8805997899ff6314839b9838c",
+      "bytes": 18146,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10人员组织查询与身份回显边界.md",
+      "origin_sha256": "566bc846f9d03b91263ec85697677c399f762a78a8d372cef140378d81d07a58",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "E10流程操作者矩阵与权限扩展边界",
+          "origin_reference": "E10流程操作者矩阵与权限扩展边界",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "distribution_note": "此为已纳入当前清单的随包副本。原稿“本页不进入助手运行稿”描述入库当时状态；“同目录 E10人员组织查询来源核对-20261022.json”仅为维护来源记录，未随包，不是接收方路径。原稿的核读范围是维护记录，不代表当前AI读过原件。",
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-public-browser-boundaries",
+      "title": "E10公共浏览框与业务查询接口边界",
+      "platform": "E10",
+      "file": "e10-public-browser-boundaries.md",
+      "sha256": "d1163695383a50ab25998bbe85fd3bb37bd84a1ea1ab3084ae61699c5a8620c0",
+      "bytes": 21245,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10公共浏览框与业务查询接口边界.md",
+      "origin_sha256": "732a6c65c38749dcd916ca9cbdc3f0a102323944510595b7c32c9111e8de1857",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "来源核对记录",
+          "origin_reference": "E10公共业务来源核对-20261022.json",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "E10表单引擎JSSDK文档",
+          "origin_reference": "E10表单引擎JSSDK文档",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "distribution_note": "此为已纳入当前清单的随包副本。原稿“未将新卡片自动装入”描述入库当时状态；正文提到的同目录来源JSON未随包，仅留维护知识库。原稿的核读范围是维护记录，不代表当前AI读过原件。",
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    },
+    {
+      "id": "e10-actionflow-trigger",
+      "title": "E10自定义动作流触发与迁移注意事项",
+      "platform": "E10",
+      "file": "e10-actionflow-trigger.md",
+      "sha256": "9292e7322800cd1e139fb3dcd6602877f0b2464e82afacfa00fd1bd2cb92fd3c",
+      "bytes": 6740,
+      "origin_vault_path": "02-Weaver-Knowledge 泛微知识库/02-E10 E10资料/E10自定义动作流触发与迁移注意事项.md",
+      "origin_sha256": "81e8d7a0990f46faaa72b0d39b7e7ef98c99eb1fbf07e6756d72a59478971613",
+      "raw_sources_included": false,
+      "external_references": [
+        {
+          "label": "E10工具包1.3.4知识覆盖与补充清单",
+          "origin_reference": "E10工具包1.3.4知识覆盖与补充清单",
+          "included": false,
+          "location": "source-reference-only"
+        },
+        {
+          "label": "E10应用建模JS-SDK文档",
+          "origin_reference": "E10应用建模JS-SDK文档",
+          "included": false,
+          "location": "source-reference-only"
+        }
+      ],
+      "omitted_source_tail": null,
+      "raw_sources_note": "原始快照不整体执行或复制；实际参考副本在library按来源路径检索，远程图片等仍可能未提供。"
+    }
+  ]
+}

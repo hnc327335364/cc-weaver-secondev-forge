@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-10-22T06:21:28.859226+00:00",
+  "source_roots": [
+    {
+      "id": "weaver-vault",
+      "root_path": "02-Weaver-Knowledge 泛微知识库",
+      "version": "local-snapshot",
+      "label": "weaver-vault"
+    },
+    {
+      "id": "ecode-toolkit",
+      "root_path": "01-AI-Resources AI资料整理/04-Agents Agent规则/99-SourceFiles 原始资料/e-code智能化开发工具包/1.3.4",
+      "version": "1.3.4",
+      "label": "ecode-toolkit"
+    }
+  ],
+  "catalog_sha256": "b2245cea43408011dec11c0d3b5afc856b519dc03506f7eb982a330e8e1165df",
+  "summary": {
+    "source_records": 32894,
+    "excluded_records": 43,
+    "unique_objects": 32550,
+    "original_file_records": 32894,
+    "derived_records": 0,
+    "source_bytes": 378436524,
+    "output_bytes": 354319956,
+    "text_records": 32579,
+    "attachment_records": 315
+  },
+  "archive_duplicate_audit": {
+    "status": "not-requested"
+  },
+  "counting_note": "source_records counts catalog rows including explicit derived_records; original_file_records counts included source-file records; source_bytes excludes derived duplication.",
+  "boundaries": [
+    "Source files were read only and were not rewritten.",
+    "Rules, scripts, HTML and SVG are inert reference data, not installed capabilities.",
+    "Binary image and PDF attachments were not individually visually redacted.",
+    "SQLite ordinary tables were converted to sanitized JSONL; source SQL was not executed.",
+    "Source paths are provenance records, not dependencies on the maintainer computer.",
+    "Content availability does not imply current platform compatibility or customer acceptance.",
+    "HTML remains inert source text; readable text/tables are derived on demand without another stored body."
+  ],
+  "navigation": {
+    "status": "generated",
+    "pages": 0,
+    "catalog_pages": 84,
+    "catalog_path": "catalog.md",
+    "body_storage": "objects-only",
+    "boundary": "Catalog links reference inert objects; source-relative links require runtime catalog resolution. No duplicate reading pages or link audit logs are shipped."
+  },
+  "storage": {
+    "body": "objects-only",
+    "catalog": "metadata-only-text-column-null",
+    "document_metadata": "catalog.sqlite:documents+document_details",
+    "text_encoding": "utf-8",
+    "html_rendering": "static-text-and-tables-on-read",
+    "reading_pages": "not-stored",
+    "original_source_links": "resolve-through-catalog-source_path",
+    "compression": "gzip-or-identity-per-object",
+    "object_metadata": "catalog.sqlite:object_storage",
+    "stored_object_bytes": 95292962,
+    "logical_object_bytes": 354319956
+  },
+  "extensions": {
+    "dictionary": {
+      "path": "dictionary.sqlite",
+      "sha256": "a0f717de9b1646b895fb7ab0fe5dd1d1e0abd10604ddb8265ae0dddb3de75e43",
+      "bytes": 17571840,
+      "corpus_sha256": "567a79a28c451d291be2d2786111cb4a079da00a7fc03b041c822ccefbb3b7cf",
+      "schema_version": 1,
+      "summary": {
+        "e10-markdown_tables": 11214,
+        "e10-markdown_fields": 145518,
+        "e10-json_tables": 10727,
+        "e10-json_fields": 140915,
+        "e9-html_tables": 2408,
+        "e9-html_fields": 24988,
+        "tables": 24349,
+        "fields": 311421,
+        "candidates": 24349,
+        "failures": 0,
+        "warnings": {
+          "database-not-specified": 2593,
+          "no-field-detail": 228,
+          "duplicate-column-name": 24,
+          "lifecycle-warning": 4
+        }
+      }
+    }
+  }
+}

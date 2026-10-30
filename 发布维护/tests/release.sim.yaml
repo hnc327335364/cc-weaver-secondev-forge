@@ -1,0 +1,9 @@
+simulation: cc-forge-release
+routing: path
+mocks:
+  - name: github
+    routeKey: github
+    path: ./github/config.yaml
+  - name: gitee
+    routeKey: gitee
+    path: ./gitee/config.yaml

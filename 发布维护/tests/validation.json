@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-30",
+  "executor": "Codex",
+  "tests": 13,
+  "result": "passed",
+  "transport": "real-local-http-via-postman-simulation",
+  "members_requests": {
+    "github": 54,
+    "gitee": 53
+  },
+  "tested": [
+    "required release notes",
+    "version/status consistency",
+    "same-version immutable notes",
+    "repeat attachment reuse",
+    "upload 500 blocks finalization",
+    "download checksum mismatch blocks finalization",
+    "both release bodies equal",
+    "final release status readback",
+    "source-only release without manual ZIP",
+    "command output redaction",
+    "command timeout cleanup"
+  ],
+  "not_tested": [
+    "live release upload",
+    "live attachment download",
+    "customer runtime acceptance"
+  ],
+  "publisher_sha256": "f723d8a0c51a699f228399656cc1f23ce0dbd96ab8e0b381f4e44398f6939a31"
+}

@@ -1,0 +1,33 @@
+{
+  "version": "0.3.0-rc.1",
+  "source": "..",
+  "archive_name": "weaver-cc-assistant.zip",
+  "manuals": [
+    "../使用说明.md"
+  ],
+  "platforms": {
+    "gitee": {
+      "role": "domestic-primary",
+      "repository": "hou_nachuan/cc-weaver-secondev-forge",
+      "private_verified": "settings-ui-2026-10-30",
+      "auth_verified": "keychain-private-repo-read-2026-10-30"
+    },
+    "github": {
+      "role": "same-version-distribution",
+      "repository": "hnc327335364/cc-weaver-secondev-forge",
+      "private_verified": "github-cli-2026-10-30",
+      "auth_verified": "github-cli-read-2026-10-30"
+    }
+  },
+  "visibility": "private",
+  "create_archive": false,
+  "automatic_upload": true,
+  "visibility_confirmed_by_user": "2026-10-30",
+  "display_name": "CC Weaver Secondev Forge",
+  "publication_status": "source-release-with-platform-generated-archive",
+  "automatic_upload_authorized": true,
+  "publisher_setup_status": "13-local-tests-passed-live-release-pending",
+  "release_notes_required": true,
+  "archive_required": false,
+  "repository_layout": "skill-at-root"
+}

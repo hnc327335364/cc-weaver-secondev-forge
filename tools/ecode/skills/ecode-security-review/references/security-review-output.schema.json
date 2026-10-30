@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ecode-security-review-output-1.1",
+  "title": "e-code security review output",
+  "type": "object",
+  "required": ["schemaVersion", "auditType", "auditStage", "reviewId", "artifactHash", "rulePackVersion", "inputFiles", "reviewInput", "decision", "riskState", "assuranceLevel", "summary", "findings", "checklistResults", "rulesApplied", "rulesSkipped", "verificationNeeded", "errors"],
+  "properties": {
+    "schemaVersion": {"type": "string", "const": "1.1"},
+    "auditType": {"type": "string", "const": "SECURITY"},
+    "auditStage": {"type": "string", "enum": ["FILE_SAVE", "PROJECT_IMPORT", "PROJECT_MIGRATION", "PROJECT_RELEASE", "JAR_RELEASE", "UNKNOWN"]},
+    "reviewId": {"type": "string", "pattern": "^SEC-[a-f0-9]{24}$"},
+    "artifactHash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "rulePackVersion": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "inputFiles": {"type": "array", "items": {"type": "object", "required": ["path", "sha256"], "properties": {"path": {"type": "string"}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}, "additionalProperties": false}},
+    "reviewInput": {"type": "object", "required": ["completeSnapshot", "loadedChecklists", "externalEvidence"], "properties": {"completeSnapshot": {"type": "boolean"}, "loadedChecklists": {"type": "array", "items": {"type": "string", "enum": ["frontend", "java"]}}, "externalEvidence": {"type": "array", "items": {"type": "object", "required": ["source", "retrievedAt", "digest", "version"], "properties": {"source": {"type": "string"}, "retrievedAt": {"type": "string"}, "digest": {"type": "string"}, "version": {"type": "string"}}, "additionalProperties": false}}}, "additionalProperties": false},
+    "decision": {"type": "string", "enum": ["PASS", "CONDITIONAL", "BLOCK"]},
+    "riskState": {"type": "string", "enum": ["CLEAN", "WARNINGS", "BLOCKED"]},
+    "assuranceLevel": {"type": "string", "enum": ["STATIC_ONLY", "STATIC_AND_RUNTIME"]},
+    "summary": {"type": "object", "required": ["filesReviewed", "findingCount", "passCount", "failCount", "naCount", "unverifiedCount"], "properties": {"filesReviewed": {"type": "integer", "minimum": 0}, "findingCount": {"type": "integer", "minimum": 0}, "passCount": {"type": "integer", "minimum": 0}, "failCount": {"type": "integer", "minimum": 0}, "naCount": {"type": "integer", "minimum": 0}, "unverifiedCount": {"type": "integer", "minimum": 0}}, "additionalProperties": false},
+    "findings": {"type": "array", "items": {"type": "object", "required": ["ruleId", "severity", "title", "file", "startLine", "endLine", "evidence", "evidenceType", "rootCauseKey", "risk", "remediation", "blocking"], "properties": {"ruleId": {"type": "string"}, "severity": {"type": "string", "enum": ["CRITICAL", "HIGH", "MEDIUM", "LOW"]}, "title": {"type": "string"}, "file": {"type": "string"}, "startLine": {"type": "integer", "minimum": 1}, "endLine": {"type": "integer", "minimum": 1}, "evidence": {"type": "string"}, "evidenceType": {"type": "string", "enum": ["SOURCE", "CONFIG", "DEPENDENCY", "ARTIFACT", "RUNTIME"]}, "rootCauseKey": {"type": "string"}, "risk": {"type": "string"}, "remediation": {"type": "string"}, "blocking": {"type": "boolean"}}, "additionalProperties": false}},
+    "checklistResults": {"type": "array", "items": {"type": "object", "required": ["ruleId", "status", "highRisk", "reason", "evidence"], "properties": {"ruleId": {"type": "string"}, "status": {"type": "string", "enum": ["PASS", "FAIL", "N/A", "UNVERIFIED"]}, "highRisk": {"type": "boolean"}, "reason": {"type": "string"}, "evidence": {"type": "string"}}, "additionalProperties": false}},
+    "rulesApplied": {"type": "array", "items": {"type": "string"}},
+    "rulesSkipped": {"type": "array", "items": {"type": "object", "required": ["ruleId", "reason"], "properties": {"ruleId": {"type": "string"}, "reason": {"type": "string"}}, "additionalProperties": false}},
+    "verificationNeeded": {"type": "array", "items": {"type": "object", "required": ["ruleId", "file", "reason", "requiredEvidence", "highRisk", "blocking"], "properties": {"ruleId": {"type": "string"}, "file": {"type": "string"}, "reason": {"type": "string"}, "requiredEvidence": {"type": "string"}, "highRisk": {"type": "boolean"}, "blocking": {"type": "boolean"}}, "additionalProperties": false}},
+    "errors": {"type": "array", "items": {"type": "object", "required": ["code", "severity", "message", "artifact", "missingItems"], "properties": {"code": {"type": "string"}, "severity": {"type": "string", "const": "ERROR"}, "message": {"type": "string"}, "artifact": {"type": "string"}, "missingItems": {"type": "array", "items": {"type": "string"}}}, "additionalProperties": false}}
+  },
+  "additionalProperties": false
+}

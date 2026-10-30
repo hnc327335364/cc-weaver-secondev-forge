@@ -1,0 +1,7 @@
+
+.ecode-search-sticky {
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  box-shadow: 0 4px 16px 0 rgba(92,120,181,0.12);
+}

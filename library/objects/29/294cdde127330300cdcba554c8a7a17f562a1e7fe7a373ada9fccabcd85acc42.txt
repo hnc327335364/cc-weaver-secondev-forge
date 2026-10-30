@@ -1,0 +1,4 @@
+
+// 这里导出个空对象，主要是为了异步引入index.css
+
+export default {}

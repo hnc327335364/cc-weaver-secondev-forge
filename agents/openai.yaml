@@ -1,0 +1,4 @@
+interface:
+  display_name: "CC Weaver Secondev Forge"
+  short_description: "一个入口处理 E9/E10 需求分析、资料查询、开发排障与交付"
+  default_prompt: "使用 $weaver-cc-assistant 处理我的泛微需求，先明确目标与缺口，只在授权范围内实施，并区分实际验证和待现场验收。"

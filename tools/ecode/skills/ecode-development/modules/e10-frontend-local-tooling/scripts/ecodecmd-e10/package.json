@@ -1,0 +1,14 @@
+{
+  "name": "@weaver/ecodecmd-e10-frontend-local",
+  "version": "1.0.0",
+  "private": true,
+  "description": "E10-only frontend project initialization, compilation, and patch packaging tool",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "ecodecmd-e10": "./bin/ecodecmd-e10.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

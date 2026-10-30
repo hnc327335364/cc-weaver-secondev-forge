@@ -1,0 +1,22 @@
+{
+  "source": "ai-integration-tools/int-ai-hr-apis",
+  "files": [
+    {
+      "name": "SKILL.md",
+      "sha256": "94c01043ec0b3934f0e5d29616a24ecbd879bc14b15be8e855d92e601e2b0a4d"
+    },
+    {
+      "name": "references/api-details.md",
+      "sha256": "b4694538be0cff1ff1fecb23fc939020f65ecf063e45fc21f4020e47317b34d3"
+    },
+    {
+      "name": "references/entity-classes.md",
+      "sha256": "8058ad5777b5a4c403a49ee72ddfd5f4e85cb22e4aa9a6b4717320f1592ea74f"
+    },
+    {
+      "name": "references/integration-types.md",
+      "sha256": "250305f2f82935979f71ed50a91ec22377d311c7039d7f82ba65607fb4b01061"
+    }
+  ],
+  "catalogEntries": 69
+}

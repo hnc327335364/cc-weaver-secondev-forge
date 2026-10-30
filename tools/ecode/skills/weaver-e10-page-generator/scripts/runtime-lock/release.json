@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package": "ui-code-agent",
+  "version": "0.1.71",
+  "uiCodeMcpVersion": "0.2.34",
+  "registry": "https://registry.npmjs.org",
+  "packageLockSha256": "8e5d6f85feeb07119ea8b0639682cc5c9f1b845cf61190cba9f676a41dad6ec6",
+  "scope": "e10-page-local-knowledge-and-preview-artifacts",
+  "notEstablished": ["core-browser", "compilation", "customer-environment", "cross-platform"]
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Review metadata only; not an executable application template",
+  "projectKind": "new",
+  "componentDefault": "function",
+  "preserveExistingClassAndStore": true,
+  "paths": {
+    "entry": "entry.js",
+    "pages": "coms",
+    "components": "coms",
+    "requests": "services",
+    "sharedState": "stores",
+    "verifiedConfiguration": "config",
+    "staticAssets": "resources",
+    "styles": "styles",
+    "utilities": "utils"
+  },
+  "stateOwnership": {
+    "local": "component",
+    "shared": "nearest common owner; store only when justified"
+  },
+  "baseline": {
+    "value": null,
+    "source": null
+  },
+  "evidence": [],
+  "reviewStatus": "UNVERIFIED"
+}

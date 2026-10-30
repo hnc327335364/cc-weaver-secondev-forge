@@ -1,0 +1,40 @@
+{
+  "source": "user-provided ai-integration-tools",
+  "integration": "ecode-dev-tools 1.3.3 / ecode-integration",
+  "runtime": "Node.js implementation adapted from source contracts; original Java not shipped",
+  "verification": "offline tests only; target API contracts unverified",
+  "files": [
+    {
+      "path": "int-ai-e9-api/SKILL.md",
+      "sha256": "1b73c898f88417c623d771a60cf3a955901bd7d9ce94e25d6ca6c78271123a05"
+    },
+    {
+      "path": "int-ai-e9-api/scripts/E9Api.java",
+      "sha256": "b7bc996ebbfe59bcb5f25e6d0581084f710a3e1ed518f111b8d9b1aed59dd282"
+    },
+    {
+      "path": "int-ai-e9-to-e10-sync/SKILL.md",
+      "sha256": "d17bb9e9fe56d7d160b9286a64b29140edc6a487930a2c8836c5e4a8f9ba4f83"
+    },
+    {
+      "path": "int-ai-e9-to-e10-sync/scripts/E9ToE10Sync.java",
+      "sha256": "8ae33def5b2cc8da503e872760291630425992c79f8e5cb48a4a36f55dfd12c6"
+    },
+    {
+      "path": "int-ai-oauth/SKILL.md",
+      "sha256": "5cec21b374a1fa67d06904318919321b86488830cddf4245439bfb056483f007"
+    },
+    {
+      "path": "int-ai-oauth/scripts/E10Api.java",
+      "sha256": "89d8f287dfc755fa2eac8be2ce64bf0e53dd9468fe5cabade2ee0ad01be2f323"
+    },
+    {
+      "path": "int-ai-hr-apis/SKILL.md",
+      "sha256": "94c01043ec0b3934f0e5d29616a24ecbd879bc14b15be8e855d92e601e2b0a4d"
+    },
+    {
+      "path": "int-ai-hr-apis/scripts/WeaverHrApiClient.java",
+      "sha256": "62455cbd94e353447208de5ab764bda2837929d54fe5d8fe081842ba9b86debe"
+    }
+  ]
+}
